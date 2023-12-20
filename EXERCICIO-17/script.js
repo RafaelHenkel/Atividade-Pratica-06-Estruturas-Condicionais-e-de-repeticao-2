@@ -6,3 +6,14 @@
 // respeitem o limite do número total de eleitores, ou seja, garantir que
 // a soma dos votos brancos, nulos e válidos não seja maior que o
 // número total de eleitores.
+
+let votosBrancos = Number(prompt("Digite o total de votos Brancos"));
+let votosNulos = Number(prompt("Digite o total de votos Nulos"));
+let votosValidos = Number(prompt("Digite o total de votos Validos"));
+let votosTotais = votosBrancos+votosNulos+votosValidos;
+
+
+document.write(`Numero total de eleitores ${votosTotais} <br>`);
+document.write(votosBrancos/votosTotais*100,"%<br>");
+document.write(votosNulos/votosTotais*100,"%<br>");
+document.write(votosValidos/votosTotais*100, "%");

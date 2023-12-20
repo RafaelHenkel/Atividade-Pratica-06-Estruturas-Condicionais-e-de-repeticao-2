@@ -3,3 +3,11 @@
 // - Caso o salário seja MENOR que R$ 1.903,98, insira no html
 // "ISENTO DE IR";
 // - caso contrário insira "TRIBUTADO NO IR".
+
+let salario = Number(prompt("Digite seu salario"));
+
+if (salario < 1903.98){
+    document.write("ISENTO DE IR");
+}else{
+    document.write("TRIBUTADO NO IR");
+}
